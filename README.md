@@ -63,6 +63,6 @@ This project consists of three independent repositories designed to demonstrate 
 
 ## GitHub Repositories
 
-* [shared-orm-library](Replace with your actual GitHub repo link)
-* [backend-repo](Replace with your actual GitHub repo link)
-* [frontend-repo](Replace with your actual GitHub repo link)
+* [shared-orm-library](https://github.com/rkantsingh801/shared-orm-library.git)
+* [frontend-repo](https://github.com/rkantsingh801/frontend-repo.git)
+* [backend-repo](https://github.com/rkantsingh801/backend-repo.git)
