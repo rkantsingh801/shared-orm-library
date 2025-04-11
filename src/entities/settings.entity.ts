@@ -3,14 +3,14 @@ import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 @Entity()
 export class Settings {
   @PrimaryGeneratedColumn()
-  id: number;
+  id!: number;
 
   @Column({ default: false })
-  IsNotificationEnabled: boolean;
+  IsNotificationEnabled!: boolean;
 
   @Column({ default: false })
-  IsNewDashboardEnabled: boolean;
+  IsNewDashboardEnabled!: boolean;
 
   @Column({ default: 'UTC' })
-  Timezone: string;
+  Timezone!: string;
 }

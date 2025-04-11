@@ -4,20 +4,23 @@
     "description": "Shared ORM entities and database connection",
     "main": "dist/index.js",
     "scripts": {
-      "build": "tsc",
-      "start": "node dist/index.js",
-      "typeorm": "ts-node ./node_modules/typeorm/cli.js",
-      "migration:generate": "npm run typeorm -- migration:generate -n",
-      "migration:run": "npm run typeorm -- migration:run"
+        "build": "tsc",
+        "start": "node dist/index.js",
+        "typeorm": "ts-node ./node_modules/typeorm/cli.js",
+        "migration:generate": "npm run typeorm -- migration:generate -n",
+        "migration:run": "npm run typeorm -- migration:run"
     },
     "dependencies": {
-      "pg": "^8.7.3",
-      "reflect-metadata": "^0.1.13",
-      "typeorm": "^0.3.17"
+        "@nestjs/common": "^11.0.15",
+        "@nestjs/core": "^11.0.15",
+        "pg": "^8.7.3",
+        "reflect-metadata": "^0.1.14",
+        "rxjs": "^7.8.2",
+        "typeorm": "^0.3.17"
     },
     "devDependencies": {
-      "@types/node": "^16.11.12",
-      "ts-node": "^10.4.0",
-      "typescript": "^4.5.2"
+        "@types/node": "^16.18.126",
+        "ts-node": "^10.4.0",
+        "typescript": "^4.9.5"
     }
-  }
+}

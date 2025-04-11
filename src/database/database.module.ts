@@ -1,5 +1,6 @@
 import { Module, Global, DynamicModule } from '@nestjs/common';
 import { createConnection } from 'typeorm';
+import { DataSource } from 'typeorm';
 import { databaseProviders } from './database.providers';
 
 @Global()
@@ -19,9 +20,9 @@ export class DatabaseModule {
               type: 'postgres',
               host: 'localhost', // Replace with your host
               port: 5432, // Replace with your port
-              username: 'your_username', // Replace
-              password: 'your_password', // Replace
-              database: 'My-account',
+              username: 'postgres', // Replace
+              password: 'root', // Replace
+              database: 'my_account',
               entities: [__dirname + '/../entities/*.entity{.ts,.js}'],
               synchronize: false,
               migrations: [__dirname + '/../migrations/*{.ts,.js}'],
